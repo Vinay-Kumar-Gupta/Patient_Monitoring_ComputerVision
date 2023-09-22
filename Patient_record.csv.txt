@@ -1,4 +1,0 @@
-P-ID	HEALTH-ISSUE	PRESCRIPTION	TIMMING	DOSE
-110	Headache	Iburophen	Morning	1
-111	Diabetes	Metformin	Afternoon	1
-112	Fever	Paracetamole	Night	1
