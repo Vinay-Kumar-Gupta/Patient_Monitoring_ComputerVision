@@ -97,12 +97,12 @@ while 1:
             cv2.rectangle(imag,(x1,y1-50),(x2,y1),(0,255,0),cv2.FILLED)
             cv2.putText(imag,name,(x1+2,y1-10),cv2.FONT_HERSHEY_COMPLEX,0.5,(0,0,255),2)
 
-# =============================== Repeation stop and record fetching =====================================
+# =============================== Repeation_stop and record_fetching =====================================
 
             Face_ID = eval(name[2:])
             if Face_ID != pre_face_id:
                 flag1=1
-            if Face_ID in [110,111,112]  and flag1==1:
+            if flag1==1:
                 flag1=0
                 pre_face_id = Face_ID
                 patient_record_fetch(Face_ID)
