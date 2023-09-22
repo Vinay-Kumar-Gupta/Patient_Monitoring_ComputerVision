@@ -5,6 +5,7 @@ import face_recognition
 import os
 import pandas as pd
 import pyttsx3
+import time
 # ======================================== Voice Setup =====================================
 
 voice = pyttsx3.init()
@@ -98,7 +99,6 @@ while 1:
             cv2.putText(imag,name,(x1+2,y1-10),cv2.FONT_HERSHEY_COMPLEX,0.5,(0,0,255),2)
 
 # =============================== Repeation_stop and record_fetching =====================================
-
             Face_ID = eval(name[2:])
             if Face_ID != pre_face_id:
                 flag1=1
